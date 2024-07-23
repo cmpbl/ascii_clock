@@ -24,8 +24,9 @@ ln = ''
 
 try:
     while 1:
+        os.system('cls' if os.name == 'nt' else 'clear')
         for row in range(0, 2):
-            print ' '
+            print (' ')
         for row in range(0, 4):
 
             time_array = [time.strftime("%I", time.localtime())[0],time.strftime("%I", time.localtime())[1],time.strftime("%M", time.localtime())[0],time.strftime("%M", time.localtime())[1]]
@@ -48,7 +49,7 @@ try:
                         else:
                             line = line + ' '
                     line = line + '  '
-            print line
+            print (line)
         
         #\x1b[7m
         time.sleep(60)
